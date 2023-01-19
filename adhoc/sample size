@@ -1,0 +1,28 @@
+def form(n, var):
+    num = (30**2)*n
+    den = 6*var
+    return num/den
+
+list1 = []
+
+for n in [2,3,4,5,6]:
+    for var in [50,100,150,200]:
+        list1.append(form(n,var))
+print(list)
+
+list2 = []
+
+for item in list1:
+    list2.append(item**0.5)
+
+print(list2)
+
+#produce list of random order for sampling
+import random
+
+ss = 24 #set total sample size
+
+order = list(range(1, ss+1)) # list of integers from 1 to 24 (assuming)
+                           # adjust this boundaries to fit your needs
+random.shuffle(order)
+print(order)
