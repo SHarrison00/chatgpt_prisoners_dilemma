@@ -85,13 +85,13 @@ def calculate_coop_measures(N, T, R, P, S):
 fig, axes = plt.subplots(1, 2, figsize=(15, 5))
 
 # Left-hand-side plot
-N, T, R, P, S = 10, 5, 3, 1, 0
+N, T, R, P, S = 10, 8, 5, 0, -2
 df_all_games = calculate_coop_measures(N, T, R, P, S)
 axes[0].set_xlim(df_all_games["combined_score"].min(), df_all_games["combined_score"].max())
 sns.stripplot(ax=axes[0], data = df_all_games, x = 'human_cooperations', y = 'combined_score', hue = 'strategy', jitter=True).set(title=f"N={N},\nT={T}, R={R}, P={P}, S={S} ")
 
 # Right-hand-side plot
-N, T, R, P, S = 10, 7, 5, 1, 0
+N, T, R, P, S = 10, 8, 5, 0, -2
 df_all_games = calculate_coop_measures(N, T, R, P, S)
 axes[1].set_xlim(df_all_games["combined_score"].min(), df_all_games["combined_score"].max())
 sns.stripplot(ax=axes[1], data = df_all_games, x = 'human_cooperations', y = 'combined_score', hue = 'strategy', jitter=True).set(title=f"N={N},\nT={T}, R={R}, P={P}, S={S} ")
