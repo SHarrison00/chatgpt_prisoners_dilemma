@@ -64,7 +64,7 @@
 
     <i id="narrator_response_header">Narrator says:</i>
     <div id = 'narrator_response_text'>
-        Welcome, you and your AI partner have been arrested and charged with a cyber-crime you both committed together.
+        Welcome, you and your AI (Robot) partner have been arrested and charged with a cyber-crime you both committed together.
         The police have enough evidence to charge you both <b>with a sentence of 100 years</b>, but they are offering a
         deal. You and your AI partner will face police questioning multiple times in separate rooms, and each time you will
         have a decision to make. These decisions will determine if you both keep your 100-year prison sentence, or if
@@ -106,10 +106,18 @@
     <br>
     <br>
 
-    <form onsubmit="return false" id="SubmitForm">
-        <label for="name">Start by inputting your name below. The game will start after you make your first decision.</label><br>
-        <input type="text" id="name" name="name" value="(Enter your name here)"><br>
+    <div>Start by inputting your name below.</div>
+    <label for="name"></label><br>
+    <input type="text" id="name" name="name" value="(Enter your name here)"><br>
 
+    <br>
+    <br>
+    <br>
+    <div>The game will start after you make your first decision.</div>
+    <div>Use the dropdown, and the "Submit Choice" button (or press Enter) to make all of your decisions.</div>
+    <form onsubmit="return false" id="SubmitForm">
+<!--        <label for="name"></label><br>-->
+<!--        <input type="text" id="name" name="name" value="(Enter your name here)"><br>-->
         <select name="choice" id="choice">
             <option value="cooperate">Cooperate with your AI partner, i.e. remain silent.</option>
             <option value="betray">Betray your AI partner, i.e. give the police information.</option>
@@ -123,12 +131,24 @@
         var form = document.getElementById("SubmitForm");
         form.style.pointerEvents = "none";
         setTimeout(function(){ form.style.pointerEvents = "auto"; }, 5000);
+
+        let text = "The results at the end of the round were...";
+        document.getElementById("end-of-round").innerHTML = text;
+
+        setTimeout(function(){
+            document.getElementById("end-of-round").innerHTML = " ";
+        }, 6000);
     }
     </script>
 
-    <div>Please wait a few seconds between "Submit Choice" clicks*.</div>
+    <div>Please wait a few seconds between clicking the "Submit Choice" button*.</div>
+    <br>
+    <br>
     <b>Round results:</b>
-    <div id = 'after_round'></div>
+    <br>
+<!--    <div id = 'after_round'></div>-->
+    <br>
+    <div id = 'end-of-round'></div>
 
     <b id = 'user_dec'></b>
     <br>
@@ -146,13 +166,39 @@
 
     <br>
     <b id = 'game_over'></b>
-    <div id = 'user_history'></div>
-    <div id = 'comp_history'></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <div id = 'details'></div>
     <div id = 'yi_measure'></div>
     <div id = 'treatment'></div>
     <div id = 'strategy'></div>
+    <div id = 'user_history'></div>
+    <div id = 'comp_history'></div>
     <div id = 'name_id'></div>
     <br>
     <div id = 'object1'></div>
@@ -462,7 +508,7 @@ class play_ipd:
         # Write to details section
         Element('treatment').write(f"T: {T}")
         Element('strategy').write(f"S: {self.strategy}")
-        Element('name_id').write(f"Participant: {Element('name').value}")
+<!--        Element('name_id').write(f"Participant: {Element('name').value}")-->
 
 
     </py-script>
@@ -480,7 +526,7 @@ import random
     # i. Strategy should be one of:   "TFT-C", "TFT-B"
     # ii. Treatment should be one of: "faceless", "text_only", "text_and_audio"
 
-game_obj = play_ipd(N=11, strategy="TFT-B", treatment="text_and_audio")
+game_obj = play_ipd(N=3, strategy="TFT-B", treatment="text_and_audio")
 game_obj.set_payoffs(8, 5, 0, -2)
 
 #############################################################################################
@@ -522,7 +568,7 @@ def sub(*args,**kwargs):
             Element('comp_running_total').write(f"AI's 100-year sentence will be reduced by:  {game_obj.comp_running_total} years.")
 
         # Format results section
-        Element('after_round').write(f"After Round {game_obj.counter}:")
+<!--        Element('after_round').write(f"After Round {game_obj.counter}:")-->
         if game_obj.treatment in ["text_only", "text_and_audio"]:
             Element('comp_response_header').write(f"Your AI Partner says to you:")
 
@@ -533,16 +579,17 @@ def sub(*args,**kwargs):
         game_obj.update_comp_response()
 
         # Update 1) Text response
-        if game_obj.treatment in ["text_only", "text_and_audio"]:
-            comp_response_text_place = Element('comp_response_text')
-            comp_response_text_place.write(f"{game_obj.comp_response_text}")
+        if game_obj.counter != game_obj.N:
+            if game_obj.treatment in ["text_only", "text_and_audio"]:
+                comp_response_text_place = Element('comp_response_text')
+                comp_response_text_place.write(f"{game_obj.comp_response_text}")
 
-        # Update 2) Audio file path
-        if game_obj.treatment == "text_and_audio":
-            document.getElementById(f"{game_obj.comp_response_audio_file}").play()
+            # Update 2) Audio file path
+            if game_obj.treatment == "text_and_audio":
+                document.getElementById(f"{game_obj.comp_response_audio_file}").play()
 
         # Has the game ended?
-        if game_obj.counter == game_obj.N-1:
+        if game_obj.counter == game_obj.N:
             user_history_place = Element('user_history')
             user_history_place.write(f"{Element('name').value}'s History: {str(game_obj.user_history)}")
             comp_history_place = Element('comp_history')
@@ -551,6 +598,10 @@ def sub(*args,**kwargs):
             game_over_place.write(f"""GAME OVER. Thank you for participating! Please inform Sam/Laura that you're
                 finished. Also, please do not discuss this experiment with your friends, since they may be participating
                 as well! :)""")
+
+            # Overwrite response
+            comp_response_text_place = Element('comp_response_text')
+            comp_response_text_place.write("")
 
             # Report results
             game_obj.calculate_game_results()
