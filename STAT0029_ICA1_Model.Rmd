@@ -116,3 +116,13 @@ Check linear model against human
 ```{r}
 summary(lm(Yi ~ Human, data=dat))
 ```
+
+LM of scores
+
+```{r}
+model_lm_score <- lm(Yi ~ Treatment*Strategy, data=dat)
+summary(model_lm_score)
+par(mfrow=c(1,2))
+plot(model_lm_score,2)
+plot(model_lm_10at,2)
+```
