@@ -1,0 +1,98 @@
+---
+title: "STAT0029_ICA1"
+output: pdf_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Read in the data
+
+```{r}
+dat <- read.csv("STAT0029_Raw data.csv", header=TRUE)
+
+#change strategy to 1/0
+dat$Strategy <- as.factor(ifelse(dat$Strategy=="TFT_C", 0, 1))
+dat$Treatment <- as.factor(dat$Treatment)
+dat$Human <- as.factor(ifelse(dat$Human=="y", 1, 0))
+dat$PD <- as.factor(ifelse(dat$PD=="y", 1, 0))
+dat$PDp <- as.factor(ifelse(dat$PDp=="y", 1, 0))
+```
+
+Add binary labels, 1=coop, 0=not coop, based on score 
+
+```{r}
+dat$Coop <- as.factor(ifelse(dat$Yi>=50, 1, 0))
+```
+
+Logistic regression with logit link function (suggest this is preferable as can interpret the logit aspect):
+
+```{r}
+log_model_logit <- glm(Coop ~ Treatment*Strategy, data=dat, family=binomial)
+summary(log_model_logit)
+par(mfrow=c(2,2))
+plot(log_model_logit)
+```
+Logistic regression with probit link function:
+
+```{r}
+log_model_probit <- glm(Coop ~ Treatment*Strategy, data=dat, family=binomial(link="probit"))
+summary(log_model_probit)
+par(mfrow=c(2,2))
+plot(log_model_probit)
+```
+
+
+Logistic regression with cloglog link function:
+
+```{r}
+log_model_cloglog <- glm(Coop ~ Treatment*Strategy, data=dat, family=binomial(link="cloglog"))
+summary(log_model_cloglog)
+par(mfrow=c(2,2))
+plot(log_model_cloglog)
+```
+
+
+
+Fitting model with human covar:
+
+```{r}
+log_model_human <- glm(Coop ~ Treatment + Strategy + Human, data=dat, family=binomial)
+summary(log_model_human)
+par(mfrow=c(2,2))
+plot(log_model_human)
+```
+
+
+
+Try some linear models with transformations:
+
+Square root transformation:
+
+```{r}
+dat$Ysq <- (dat$Yi)^0.5
+```
+
+Fit linear model
+```{r}
+model_lm <- lm(Ysq ~ Treatment * Strategy, data=dat)
+summary(model_lm)
+par(mfrow=c(2,2))
+plot(model_lm)
+```
+
+Angular transform:
+
+```{r}
+dat$Yat <- 10*asin(((dat$Yi)/100)^0.5)
+```
+
+Fit linear model
+```{r}
+model_lm_at <- lm(Yat ~ Treatment * Strategy, data=dat)
+summary(model_lm_at)
+par(mfrow=c(2,2))
+plot(model_lm_at)
+```
