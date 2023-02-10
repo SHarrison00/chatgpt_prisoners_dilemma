@@ -1,0 +1,61 @@
+﻿Order,Box,Name,Treatment,Strategy,Yi,Play sequence,Help,Q1,Q2,Q3,Q4
+1,8,Dom,T1,TFT_B,36,"Dom's History: ['betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'cooperate', 'cooperate', 'cooperate']",y,y,n,y,suspected tft strategy
+2,19,Alisha,T3,TFT_C,0,"Alisha Amrein's History: ['betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray']
+Computer History: ['cooperate', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray']",y,y,y,y,"choice of partner in previous round, game strategy to stick to one choice, no trust in partner because kept betraying despite saying to work together"
+3,1,Poppy,T1,TFT_C,44,"Poppaea's History: ['betray', 'cooperate', 'cooperate', 'betray', 'betray', 'betray', 'betray', 'betray', 'cooperate', 'cooperate', 'betray']
+Computer History: ['cooperate', 'betray', 'cooperate', 'cooperate', 'betray', 'betray', 'betray', 'betray', 'betray', 'cooperate', 'cooperate']",n,y,m,y,nothing
+4,7,Ollie,T1,TFT_B,66,"Oliver Bhattachary Krishnamma's History: ['betray', 'betray', 'betray', 'betray', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['betray', 'betray', 'betray', 'betray', 'betray', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",n,y,n,n,"Playing long game - initially angry with the AI, then changed behaviour for long game "
+5,22,Thibaud,T3,TFT_B,100,"Thibaud's History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['betray', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",y,n,n,n,"Better outcome mutually if coop, forgave AI on first round."
+6,5,Stephy,T1,TFT_B,18,"Stephy's History: ['betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'cooperate', 'betray', 'cooperate']
+Computer History: ['betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'cooperate', 'betray']",y,y,n,y,First round dont trust AI so betray. Betrayed because it was AI. Then into routin of utual betray and tried to change 
+7,13,Monika,T2,TFT_B,50,"Monika's History: ['cooperate', 'cooperate', 'betray', 'betray', 'cooperate', 'cooperate', 'betray', 'cooperate', 'betray', 'betray', 'betray']
+Computer History: ['betray', 'cooperate', 'cooperate', 'betray', 'betray', 'cooperate', 'cooperate', 'betray', 'cooperate', 'betray', 'betray']",n,y,y,n,"Thinking about what I'd do in that position (thinking about how the AI would react). Expecting it to coop on frist round, but was taken aback when it didn't"
+8,21,Aayush,T3,TFT_B,100,"Aayush's History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['betray', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",n,y,n,n,"Being nice on first go, thought if he kept coop then AI would too"
+9,12,Jhotika,T2,TFT_C,44,"Jhotika's History: ['cooperate', 'cooperate', 'cooperate', 'betray', 'betray', 'cooperate', 'betray', 'betray', 'betray', 'betray', 'cooperate']
+Computer History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'betray', 'betray', 'cooperate', 'betray', 'betray', 'betray', 'betray']",n,n,n,y,Focused on lowering the sentence
+10,16,Dinesh,T2,TFT_B,100,"Dinesh Chapala's History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['betray', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",n,y,n,n,2 extra years not a lot (difference between coop and betray). Forgave initial betrayal
+11,10,Sharmilan,T2,TFT_C,0,"Sharmilan's History: ['betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray']
+Computer History: ['cooperate', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray']",n,y,n,y,thought AI was going to betray each time even though was telling him it wasn't going to
+12,14,Sunny,T2,TFT_B,12,"Sunny's History: ['betray', 'cooperate', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray']
+Computer History: ['betray', 'betray', 'cooperate', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray']",n,y,n,n," thought that the ai partner would keep betraying them, therefore, did not want to cooperate"
+13,3,Fred,T1,TFT_C,100,"Fred's History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",n,y,n,n,"felt the ai was predictable, didn't want to break the chain of cooperation as anticpated it would be programmed to always cooperate unless betrayed"
+14,18,Abi C,T3,TFT_C,36,"Abi's History: ['betray', 'betray', 'betray', 'cooperate', 'betray', 'betray', 'cooperate', 'betray', 'betray', 'betray', 'cooperate', 'betray']
+Computer History: ['cooperate', 'betray', 'betray', 'betray', 'cooperate', 'betray', 'betray', 'cooperate', 'betray', 'betray', 'betray', 'cooperate']",n,n,n,y,"felt the ai encouraged them to cooperate. however, thought betrayal was a better self-serving strategy, i.e. view the game as combative"
+15,20,Le Tai,T3,TFT_C,100,"Le's History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",n,y,y,y,"familiar with prisoner's dilemma. was willing to see whether the ai would cooperate or not, was happy to continue cooperating "
+16,17,Lena,T3,TFT_C,28,"Lena's History: ['betray', 'betray', 'betray', 'betray', 'cooperate', 'cooperate', 'betray', 'betray', 'betray', 'betray', 'cooperate']
+Computer History: ['cooperate', 'betray', 'betray', 'betray', 'betray', 'cooperate', 'cooperate', 'betray', 'betray', 'betray', 'betray']",n,y,n,y,"felt the ai encouraging them to cooperate. and felt ""bad"""
+17,4,Zhansaya,T1,TFT_C,0,"Zhansaya's History: ['betray', 'betray', 'betray', 'betray', 'cooperate', 'cooperate', 'betray', 'betray', 'betray', 'betray', 'betray']
+Computer History: ['cooperate', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray']",n,y,n,n,very familiar with the game. considered UB to be the always dominant strategy
+18,9,Dominik,T2,TFT_C,100,"Dominik's History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",n,y,n,y,"started to cooperate, seemed to be working, carried on"
+19,11,Timothy Cheung,T2,TFT_C,0,"Timothy Cheung's History: ['betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray']
+Computer History: ['cooperate', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray']",n,y,y,n,felt that UB was the dominant strategy
+20,15,Arnau,T2,TFT_B,100,"Arnau's History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['betray', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",n,y,n,n,was going to play TFT. gave AI one more chance
+21,6,Teona,T1,TFT_B,100,"Teona's History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['betray', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",n,y,y,n,"felt ai was cooperating, so continued to do so"
+22,23,Usama,T3,TFT_B,38,"Usama's History: ['cooperate', 'cooperate', 'betray', 'betray', 'cooperate', 'cooperate', 'betray', 'betray', 'betray', 'betray', 'betray']
+Computer History: ['betray', 'cooperate', 'cooperate', 'betray', 'betray', 'cooperate', 'cooperate', 'betray', 'betray', 'betray', 'betray']",n,y,n,y,n/a
+23,2,Imran,T1,TFT_C,100,"Imran's History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",n,y,y,n,n/a
+24,24,Rebecca,T3,TFT_B,0,"""Rebecca History: ['betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray']
+Computer History: ['betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray']""",n,y,y,y,"worked out bigger pay off in first round, then woudn't coop until the AI did"
+25,,Aleksandra,T1,TFT_C,100,"Aleksandra's History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",n,y,y,n,n/a
+26,,Harjot,T3,TFT_C,100,"Harjot Singh Khera's History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",n,y,n,n,n/a
+27,,Akshata,T1,TFT_B,48,"Akshata's History: ['cooperate', 'cooperate', 'cooperate', 'betray', 'betray', 'betray', 'betray', 'cooperate', 'cooperate', 'betray', 'betray']
+Computer History: ['betray', 'cooperate', 'cooperate', 'cooperate', 'betray', 'betray', 'betray', 'betray', 'cooperate', 'cooperate', 'betray']",n,y,n,y,n/a
+28,,Tymur,T2,TFT_C,36,"Tymur's History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray']
+Computer History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'betray', 'betray', 'betray', 'betray', 'betray', 'betray']",y,y,y,y,tried to infer the strategy of the computer
+29,,Charlie,T3,TFT_B,52,"Charlie Brown's History: ['cooperate', 'betray', 'betray', 'betray', 'betray', 'betray', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['betray', 'cooperate', 'betray', 'betray', 'betray', 'betray', 'betray', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",n,n,n,n,hurt after initial betrayal. felt like cooperating made sense to try
+30,,Martin,T2,TFT_B,100,"Martin's History: ['cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']
+Computer History: ['betray', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate', 'cooperate']",n,n,y,n,wanted to give the ai one more chance 

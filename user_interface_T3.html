@@ -442,7 +442,7 @@ class play_ipd:
             "betrayal_11.mp3": "I may be an AI, but I understand the importance of forgiveness and moving forward. Let's cooperate for our mutual benefit."
         }
 
-        Element("object1").write(f"coupled_recent_history: {coupled_recent_history}")
+<!--        Element("object1").write(f"coupled_recent_history: {coupled_recent_history}")-->
 
         # Cooperating
         if coupled_recent_history in [["CC"], ["CC","CC"], ["CB","CC"]]:
@@ -526,7 +526,7 @@ import random
     # i. Strategy should be one of:   "TFT-C", "TFT-B"
     # ii. Treatment should be one of: "faceless", "text_only", "text_and_audio"
 
-game_obj = play_ipd(N=11, strategy="TFT-C", treatment="text_and_audio")
+game_obj = play_ipd(N=11, strategy="TFT-B", treatment="text_and_audio")
 game_obj.set_payoffs(8, 5, 0, -2)
 
 #############################################################################################
