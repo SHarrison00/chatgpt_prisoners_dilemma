@@ -10,6 +10,13 @@ Date: February 2023
 
 Additionally, this project was awarded a distinction, scoring highly for being well-written and appropriate experimental design.
 
-1.  [Read the report (PDF)](report.pdf)
+## Authors
+
+- [@sharrison00](https://github.com/sharrison00)
+- [@ljjohnston90](https://github.com/ljjohnston90)
+
+## Documentation 
+
+1. [Read the report (PDF)](report.pdf)
 
 2. [See an interface demo (Video)](https://drive.google.com/file/d/19jU0RXQ17tdbk51pwAGbPJuZlp9syNj2/view?usp=sharing)
