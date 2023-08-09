@@ -10,6 +10,6 @@ Date: February 2023
 
 Additionally, this project was awarded a distinction, scoring highly for being well-written and appropriate experimental design.
 
-- [Read the report (PDF)](report.pdf)
+1.  [Read the report (PDF)](report.pdf)
 
-- [See an interface demo (Video)](drive.google.com/file/d/19jU0RXQ17tdbk51pwAGbPJuZlp9syNj2/view?usp=sharing)
+2. [See an interface demo (Video)](drive.google.com/file/d/19jU0RXQ17tdbk51pwAGbPJuZlp9syNj2/view?usp=sharing)
