@@ -99,17 +99,32 @@ par(mfrow=c(2,2))
 plot(model_lm_at)
 ```
 
-Angular transform (using coop out of 10):
+Angular transform (using coop out of last 10):
 
 ```{r}
-dat$Y10 = c(4, 10, 2, 10, 10, 4, 7, 2, 10, 4, 4, 0, 10, 0, 3, 4, 10,1, 10, 10, 0, 3, 10, 3, 10, 10, 10, 3, 0, 5)
-dat$Y10at <- (10^0.5)*asin(((dat$Y10)/10)^0.5)
+dat$Y2at <- (10^0.5)*asin(((dat$Y2)/10)^0.5)
 ```
 
 Fit linear model
 ```{r}
-model_lm_10at <- lm(Y10at ~ Treatment * Strategy, data=dat)
-summary(model_lm_at)
+model_lm_10at <- lm(Y2at ~ Treatment * Strategy, data=dat)
+summary(model_lm_10at)
 par(mfrow=c(2,2))
-plot(model_lm_at)
+plot(model_lm_10at)
+```
+
+Check linear model against human
+
+```{r}
+summary(lm(Yi ~ Human, data=dat))
+```
+
+LM of scores
+
+```{r}
+model_lm_score <- lm(Yi ~ Treatment*Strategy, data=dat)
+summary(model_lm_score)
+par(mfrow=c(1,2))
+plot(model_lm_score,2)
+plot(model_lm_10at,2)
 ```
